@@ -12,8 +12,6 @@
   <header class="bg-primary text-white text-center py-5">
     <div class="container">
       <h1 class="display-5 fw-bold"> I LIKE YOU</h1>
-      <h2>Discover Local Minnesota Artists</h2>
-      <h3>Support over 300 local creators with handmade goods and original art</h3>
     </div>
   </header>
 
@@ -35,7 +33,13 @@
     </div>
   </nav>
 
-
+   <!-- Breadcrumbs -->
+  <nav aria-label="breadcrumb" class="container mt-3">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="home.html">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">House Flair</li>
+    </ol>
+  </nav>
 
 
 <!-- Page Layout with Sidebar and Main Content -->
@@ -61,14 +65,17 @@
         </div>
       </aside>
 
-<!-- Main Content -->
-<main class="col-md-9 col-lg-10">
-  <div class="p-3 bg-white rounded shadow-sm mb-4">
-    <h2>Welcome!</h2>
-    <p class="lead">Browse our curated collection of locally made art, gifts, and goods from Minnesota creators.</p>
+      <!-- Main Content -->
+      <main class="col-md-9 col-lg-10">
+      <div class="p-3 bg-white rounded shadow-sm d-flex align-items-center">
+      <img src="https://via.placeholder.com/100" alt="Profile picture of Sarah Johnson" class="rounded-circle me-4" width="100" height="100">
+      <div>
+    <h2>Handmade Ceramic Mug</h2>
+    <h4><a href="artist_sarah_johnson.html">Sarah Johnson | Minneapolis, MN</a></h4>
   </div>
+</div>
 
-  <!-- Featured Products -->
+<!-- Featured Products -->
 <div class="p-3 bg-white rounded shadow-sm">
   <div class="row g-4">
 
@@ -154,9 +161,10 @@
       </div>
     </div>
   </div>
-</main>
-
-
+        
+      </main>
+    </div>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
