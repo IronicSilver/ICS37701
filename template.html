@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>I Like You Store</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Discover Local Minnesota Artists</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body class="bg-light">
 
-  <!-- Header -->
+  <!-- Top Banner -->
+  <header class="bg-primary text-white text-center py-5">
+    <div class="container">
+      <h1 class="display-5 fw-bold"> I LIKE YOU</h1>
+      <h2>Discover Local Minnesota Artists</h2>
+      <h3>Support over 300 local creators with handmade goods and original art</h3>
+    </div>
+  </header>
+
+  <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#">I Like You Store</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
@@ -27,44 +35,33 @@
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="text-center py-5 bg-light border-bottom">
-    <div class="container">
-      <h1 class="fw-bold mb-3">Discover Local Minnesota Artists</h1>
-      <p class="text-muted">Shop unique handmade items from over 300 local creators</p>
-    </div>
-  </section>
 
-  <!-- Featured Products -->
-  <section class="py-5">
-    <div class="container">
-      <h2 class="mb-4">Featured Products</h2>
-      <div class="row g-4 justify-content-center">
-        <div class="col-md-4 col-sm-6">
-          <div class="card h-100 text-center shadow-sm">
-            <div class="card-body">
-              <div class="bg-secondary mb-3" style="height: 150px;">
-                <span class="d-flex align-items-center justify-content-center h-100 text-white">Image</span>
-              </div>
-              <h5 class="card-title">Handmade Ceramic Mug</h5>
-              <p class="card-text fw-bold">$28</p>
-            </div>
-          </div>
+<!-- Page Layout with Sidebar and Main Content -->
+  <div class="container-fluid mt-4">
+    <div class="row">
+      <!-- Sidebar -->
+      <aside class="col-md-3 col-lg-2 mb-4">
+        <div class="bg-white p-3 rounded shadow-sm">
+          <h5 class="fw-bold mb-3">Categories</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#">Jewelry</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Home Decor</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Prints</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Apparel</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Gifts</a></li>
+          </ul>
         </div>
-        <div class="col-md-4 col-sm-6">
-          <div class="card h-100 text-center shadow-sm">
-            <div class="card-body">
-              <div class="bg-secondary mb-3" style="height: 150px;">
-                <span class="d-flex align-items-center justify-content-center h-100 text-white">Image</span>
-              </div>
-              <h5 class="card-title">Minnesota Print</h5>
-              <p class="card-text fw-bold">$35</p>
-            </div>
-          </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="col-md-9 col-lg-10">
+        <div class="p-3 bg-white rounded shadow-sm">
+          <h2>Welcome!</h2>
+          <p class="lead">Browse our curated collection of locally made art, gifts, and goods from Minnesota creators.</p>
         </div>
-      </div>
+      </main>
     </div>
-  </section>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
